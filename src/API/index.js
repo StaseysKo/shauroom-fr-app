@@ -15,6 +15,6 @@ export const SendEmail = async ({
 }) => {
 
     const datas = { services, firstName, lastName, email, phoneNumber, city, experience, budget, message };
-    let res = await axios.post(`http://localhost:5000/send`, datas);
+    let res = await axios.post(`http://194.58.108.48:5000/send`, datas);
 
 };
