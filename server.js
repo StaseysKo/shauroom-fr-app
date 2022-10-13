@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["http://194.58.108.48:3000"],
 }));
 const port = process.env.PORT || 5000;
 
@@ -26,5 +26,5 @@ app.post("/send", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
+  console.log(`http://194.58.108.48:${port}`);
 });
